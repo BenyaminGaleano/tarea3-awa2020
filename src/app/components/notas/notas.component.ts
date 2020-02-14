@@ -15,6 +15,10 @@ export class NotasComponent implements OnInit {
   }
 
   add():void{
+    if(this.materia.trim() == "" || this.nota.trim() == "" ){
+      alert("Rellene ambos campos");
+      return;
+    }
     let book = document.getElementById("book");
     let tr = document.createElement("tr");
     let th1 = document.createElement("th");
