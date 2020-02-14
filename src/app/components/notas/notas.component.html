@@ -1,0 +1,27 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-1">
+            Materia: <br><br>
+            Nota:      
+        </div>
+        <div class="col-4">
+            <input type="text"(input)= "materia = $event.target.value"><br>
+            <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" (input)="nota = $event.target.value"><br>
+            <button (click)="add()">Agregar</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-5">
+            <table class="table" id="book">
+                <tr>
+                    <th>Materia</th>
+                    <th>Nota</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

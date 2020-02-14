@@ -1,0 +1,7 @@
+<br>
+<div class="container">
+    <input type="number" style="margin-right: 10px;" (input)="prime = $event.target.value" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <button class="btn btn-primary" type="button" (click)="isPrime()">Primo</button>
+    <br>
+    {{result}}
+</div>

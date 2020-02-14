@@ -1,0 +1,29 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group">
+                <label for="">Operador 1 </label>
+                <input type="number" (input)="n1 = $event.target.value" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                  class="form-control" name="" id="" aria-describedby="helpId" placeholder="Operadorando 1">
+                <small id="helpId" class="form-text text-muted">ingrese un valor numerico</small><br>
+          
+                <label for="">Operador 2 </label>
+                <input type="number" (input)="n2 = $event.target.value" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                  class="form-control" name="" id="" aria-describedby="helpId" placeholder="Operadorando 2">
+                <small id="helpId" class="form-text text-muted">ingrese un valor numerico</small>
+              </div>
+        </div>
+        <div class="col-2">
+            
+        </div>
+        <div class="col-5">
+            <br><br>
+            <button type="button" class="btn btn-primary" (click)="sum()">+</button>
+            <button type="button" class="btn btn-primary" (click)="res()">-</button>
+            <button type="button" class="btn btn-primary" (click)="mul()">*</button>
+            <button type="button" class="btn btn-primary" (click)="div()">/</button><br><br>
+            resultado: {{result}}
+        </div>
+    </div>
+</div>
